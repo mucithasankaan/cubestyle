@@ -5,7 +5,7 @@ import time
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print(socket.gethostbyname(socket.gethostname()))
 # Bind the socket to a specific address and port
-server_address = (socket.gethostbyname(socket.gethostname()), 12345)
+server_address = ("0.0.0.0", 12345)
 server_socket.bind(server_address)
 
 # Listen for incoming connections
